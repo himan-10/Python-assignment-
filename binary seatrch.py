@@ -1,0 +1,12 @@
+mylist=[1,2,3,4,5,6,7,8,9]
+search=5
+low=0
+high=len(mylist)-1
+while(low<=high):
+  mid=(high+low)//2
+if(mylist[mid]==search):
+   print(mid)
+elif(mylist[mid]<search):
+ low=mid+1
+elif(mylist[mid]>search):
+   high=mid-1
